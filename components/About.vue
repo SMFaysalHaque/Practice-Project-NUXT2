@@ -1,7 +1,7 @@
 <template>
     <div>
         <h3>About</h3>
-        <NuxtLink to="/"><button class="border border-s-teal-200 bg-sky-300">Go To Home</button></NuxtLink> 
+        <nuxt-link :to="localePath('home', 'fr')"><button>Go To Home</button></nuxt-link> 
         <!-- here "/" is index.vue -->
     </div>
 </template>

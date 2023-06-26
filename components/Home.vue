@@ -1,13 +1,18 @@
 <template>
   <div>
     <h3>Home</h3>
-    <NuxtLink to="/about"><button class="border border-s-teal-200 bg-sky-300">Go To About</button></NuxtLink>
+    <nuxt-link :to="localePath('about')"><button>Go To About</button></nuxt-link>
   </div>
 </template>
 
 <script>
   export default {
-    name: "Home"
+    name: "Home",
+    head () {
+            return {
+                title: 'Home'
+            }
+        }
   }
 </script>
 
