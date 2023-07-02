@@ -1,17 +1,23 @@
 <template>
   <div>
+    <LangNavigation />
     <Home />
-    <LangSwitcher style="padding-top: 90px" />
+    <h1>{{ $t('hello') }}</h1>
+    <!-- <LangSwitcher style="padding-top: 90px" /> -->
   </div>
 </template>
 
 <script>
-import LangSwitcher from "../components/LangSwitcher.vue";
+// import LangSwitcher from "../components/LangSwitcher.vue";
+import LangNavigation from '../components/LangNavigation.vue';
 export default {
-  comments: {
-    LangSwitcher,
-  },
-  name: "IndexPage",
+  
+    comments: {
+    // LangSwitcher, 
+    
+    },
+    name: "IndexPage",
+    components: { LangNavigation }
 };
 </script>
 
