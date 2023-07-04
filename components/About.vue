@@ -1,11 +1,9 @@
 <template>
-    <div>
-        <div v-for="locale in $i18n.locales" :key="locale.code">
-            <nuxt-link
-            :to="switchLocalePath(locale.code)">{{ locale.name }}
-            </nuxt-link>
+    <div class="">
+        <div class="flex flex-col items-center w-[50%] border border-orange-600 mx-auto p-10">
+            <p class="mb-5 font-bold">{{ $t('hello') }}</p>
+            <nuxt-link :to="localePath('index')"><button class="border border-sky-600 px-5">Go To Home</button></nuxt-link>
         </div>
-        <h1>{{ $t('hello') }}</h1>
     </div>
 </template>
 

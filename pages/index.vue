@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <LangNavigation />
+  <div class="border w-[50%] mx-auto">
     <Home />
-    <h1>{{ $t('hello') }}</h1>
-    <!-- <LangSwitcher style="padding-top: 90px" /> -->
   </div>
 </template>
 
 <script>
 // import LangSwitcher from "../components/LangSwitcher.vue";
 import LangNavigation from '../components/LangNavigation.vue';
+import Navbar from '../components/Navbar.vue';
 export default {
   
     comments: {
@@ -17,12 +15,12 @@ export default {
     
     },
     name: "IndexPage",
-    components: { LangNavigation }
+    components: { LangNavigation, Navbar }
 };
 </script>
 
 <style>
-body {
+/* body {
   background-color: #f0f0f0;
   display: grid;
   place-content: center;
@@ -44,5 +42,5 @@ a:visited {
 }
 a:hover {
   background-color: rgb(23, 61, 62);
-}
+} */
 </style>

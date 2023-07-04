@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="border w-[50%] mx-auto">
     <About />
     <!-- <LangSwitcher style="padding-top: 90px" /> -->
   </div>
@@ -7,9 +7,11 @@
 
 <script>
 // import LangSwitcher from "../components/LangSwitcher.vue";
+import Navbar from '../components/Navbar.vue';
 export default {
   comments: {
     // LangSwitcher,
+    Navbar
   },
   name: "AboutPage",
   head() {
