@@ -1,6 +1,9 @@
 <template>
-  <div class="border w-[50%] mx-auto">
-    <About />
+  <div>
+    <Navbar />
+    <div class="border w-[50%] mx-auto">
+      <About />
+    </div>
     <!-- <LangSwitcher style="padding-top: 90px" /> -->
   </div>
 </template>

@@ -1,6 +1,9 @@
 <template>
-  <div class="border w-[50%] mx-auto">
-    <Home />
+  <div>
+    <Navbar />
+    <div class="border w-[50%] mx-auto">
+      <Home />
+    </div>
   </div>
 </template>
 
