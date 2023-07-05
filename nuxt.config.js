@@ -54,14 +54,70 @@ export default {
         file: 'en-US.js'
       },
       {
-        name: 'French',
-        code: 'fr',
-        iso: 'fr-FR',
-        file: 'fr-FR.js'
+        name: 'Bangla',
+        code: 'bn',
+        iso: 'bn-BN',
+        file: 'bn-BN.js'
       },
     ],
     langDir: 'lang/',
     defaultLocale: 'en',
+    vueI18n: {
+      numberFormats: {
+        en: {
+          currency: {
+            style: 'currency',
+            currency: 'USD',
+            notation: 'compact'
+          },
+          decimal: {
+            style: 'decimal',
+          },
+          percent: {
+            style: 'percent',
+          }
+        },
+        // it: {
+        //   currency: {
+        //     style: 'currency',
+        //     currency: ''
+        //   }
+        // },
+        bn: {
+          currency: {
+            style: 'currency',
+            currency: 'BDT',
+            notation: 'compact'
+          },
+          decimal: {
+            style: 'decimal',
+          },
+          percent: {
+            style: 'percent',
+          }
+        },
+      },
+      dateTimeFormats: {
+        en: {
+          short: {
+            year: 'numeric', month: 'short', day: 'numeric'
+          },
+          long: {
+            year: 'numeric', month: 'short', day: 'numeric',
+            weekday: 'short', hour: 'numeric', minute: 'numeric'
+          }
+        },
+        bn: {
+          short: {
+            year: 'numeric', month: 'short', day: 'numeric'
+          },
+          long: {
+            year: 'numeric', month: 'short', day: 'numeric',
+            weekday: 'short', hour: 'numeric', minute: 'numeric'
+          }
+        },
+      }
+    }
   }]
 ],
 
